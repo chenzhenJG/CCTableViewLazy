@@ -12,11 +12,11 @@
 
 + (instancetype)cellWithUITableView:(UITableView *)tableView
 {
-    NSString *indentifier = NSStringFromClass(self);
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:indentifier];
+    NSString *identifier = NSStringFromClass(self);
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell)
     {
-        cell = [[[super class] alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifier];
+        cell = [[[super class] alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     
     return (CCTableViewCell *)cell;
